@@ -1,56 +1,125 @@
+/* ------- Body section start --------- */
+
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+/* main section Desgine */
+
+#body {
+  background-color: #818096;
 }
-.search-field:hover {
-  outline: none;
-  border: none;
+/* heading design  */
+.heading{
+  color: lightcyan;
+
 }
+.sub-heading{
+  color: seashell;
+}
+/* search field desgine */
+
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
+  margin-top: 200px;
+  border: 3px solid rgb(3, 118, 211);
+  width: 500px;
+  border-radius: 5px 15px 15px 5px;
   margin: auto;
-  margin-top: 50px;
   border-right: none;
 }
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+.search-field {
+  border: none;
+  padding: 10px;
+  outline: none;
 }
+.form-control:focus{
+  outline: none;
+  border: none;
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none !important ;
+}
+/* Search Button Desgine */
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #304352 0%,
+    #d7d2cc 51%,
+    #304352 100%
+  );
+}
+
+.btn-grad {
+  margin-left: 8px;
+  padding: 10px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+/* all product Contianer desgine */
+
 #all-products {
   display: grid;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
+/* single product desgine */
+.shop-product {
+  background-color: white;
+}
 .single-product {
+  background-color: #323c36;
+  color: white;
+  border-radius: 10px;
   padding: 10px;
+  border: 1px solid yellowgreen;
   transition: 0.6s;
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 4px 4px 7px white;
   border-radius: 10px;
   border: 1px solid cyan;
 }
+/* card-inner design  */
+.cloth-title{
+  color: tomato;
+}
+.single-rating{
+  color: chartreuse;
+}
+.final-price{
+  color: papayawhip;
+}
+/* product */
 .product-image {
   width: 150px;
   height: 150px;
 }
+.selling-info {
+  color: aqua;
+}
+/* cart  */
 .cart {
+  border: 2px solid springgreen;
+  color: aqua;
+  background-color: #201f25;
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -60,6 +129,7 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+/* responsiveness */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -78,6 +148,7 @@ body {
     padding-right: 10px;
   }
 }
+/* responsiveness */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
